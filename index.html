@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="serjo.js-slider.css">
+</head>
+<body>
+    <div class="test-slider" id="test-slider"></div>
+
+    <script src="serjo.js-slider.js"></script>
+    <script>
+        const slider = new SerjoJSSlider('#test-slider');
+              slider.Init({
+                controls: true,
+                slides: [
+                    {
+                        title: 'Test Slide 1',
+                        description: 'Test slide description 1',
+                        img: 'test.jpg'
+                    },
+                    {
+                        title: 'Test Slide 2',
+                        description: 'Test slide description 2',
+                        img: 'test.jpg'
+                    },
+                    {
+                        title: 'Test Slide 3',
+                        description: 'Test slide description 3',
+                        img: 'test.jpg'
+                    },
+                    {
+                        title: 'Test Slide 4',
+                        description: 'Test slide description 4',
+                        img: 'test.jpg'
+                    }
+                ]
+              });
+    </script>
+</body>
+</html>

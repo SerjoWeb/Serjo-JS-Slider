@@ -59,7 +59,7 @@ class SerjoJSSlider {
                 return;
             }
         } catch (err) {
-            console.error(err);
+            console.error('Server Error:', err.message);
         }
     }
 
@@ -88,7 +88,7 @@ class SerjoJSSlider {
                 sliderDotControlContent: $sliderDotControlContent
             };
         } catch (err) {
-            console.error(err);
+            console.error('Server Error:', err.message);
         }
     }
 
@@ -126,7 +126,7 @@ class SerjoJSSlider {
                 sliderBtnNext: $sliderBtnNext
             };
         } catch (err) {
-            console.error(err);
+            console.error('Server Error:', err.message);
         }
     }
 
@@ -197,7 +197,7 @@ class SerjoJSSlider {
             /** Fill selected element */
             selectedEl.appendChild(sliderElements.sliderWrapper);
         } catch (err) {
-            console.error(err);
+            console.error('Server Error:', err.message);
         }
     }
 
